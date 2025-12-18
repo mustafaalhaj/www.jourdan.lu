@@ -1,49 +1,124 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Jourdan Luxembourg S.A. à Kehlen. Concessionnaire officiel IVECO, vente de camions, service après-vente, dépannage 24/7 et distributeur Max Trailer au Luxembourg.">
-    <meta name="keywords"
-        content="Garage Jourdan, Iveco Luxembourg, Dépannage Poids Lourds, Camions Occasion, Max Trailer, Kehlen, Garage Poids Lourds, Iveco Service">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Optimization -->
     <title>Garage Jourdan Luxembourg | Concessionnaire IVECO & Dépannage Poids Lourds</title>
+    <meta name="description"
+        content="Expert Poids Lourds au Luxembourg depuis 2012. Concessionnaire officiel IVECO, distributeur Max Trailer, dépannage 24/7 et service après-vente agréé.">
+    <meta name="keywords"
+        content="Garage Jourdan, Iveco Luxembourg, Dépannage Poids Lourds, Camions Occasion, Max Trailer, Kehlen, Maintenance Camion, Tachygraphe">
+    <meta name="author" content="Groupe Jourdan">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jourdan.lu/">
+
+    <!-- Social Media / Open Graph -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Garage Jourdan - Expert Poids Lourds Luxembourg">
+    <meta property="og:url" content="https://www.jourdan.lu/">
+    <meta property="og:image" content="https://www.jourdan.lu/index_htm_files/hero_trucks.jpg">
+    <meta property="og:description"
+        content="Votre partenaire de confiance pour l'achat, l'entretien et le dépannage de véhicules industriels et utilitaires au Luxembourg.">
+    <meta property="og:site_name" content="Garage Jourdan">
+
+    <!-- Performance & PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF8200">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="index_htm_files/favicon.png">
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Garage Jourdan Luxembourg S.A.",
+      "image": "https://www.jourdan.lu/index_htm_files/hero_trucks.jpg",
+      "url": "https://www.jourdan.lu",
+      "telephone": "+352305555",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "23, ZI Kehlen",
+        "addressLocality": "Kehlen",
+        "postalCode": "L-8287",
+        "addressCountry": "LU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.6667,
+        "longitude": 6.0333
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "12:00"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
     <header>
         <div class="container header-inner">
-            <a href="index.html" class="logo">Groupe <span>JOURDAN</span></a>
-            <nav>
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+                Groupe <span>JOURDAN</span>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
                     <li><a href="occasions.htm">Véhicules d'Occasion</a></li>
                     <li><a href="depannages.htm">Dépannage & Services</a></li>
                     <li><a href="matdepannage.htm">Matériel</a></li>
-                    <li><a href="#contact" class="btn btn-primary" style="color: white;">Contact</a></li>
+                    <li class="nav-btn"><a href="#contact" class="btn btn-primary" style="color: white;">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Clean Hero Section -->
-        <section class="hero">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Introduction">
             <div class="container">
                 <div class="hero-content">
                     <h1>Expertise et Innovation Poids Lourds au Luxembourg</h1>
                     <p>Concessionnaire officiel IVECO et Max Trailer. Une gamme complète de services pour les
                         professionnels du transport depuis 2012.</p>
-                    <div style="display: flex; gap: 1rem;">
+                    <div class="hero-buttons">
                         <a href="occasions.htm" class="btn btn-primary">Voir les Occasions</a>
-                        <a href="#services" class="btn btn-outline">Nos Services</a>
+                        <a href="#services" class="btn btn-outline" style="color: #fff; border-color: #fff;">Nos
+                            Services</a>
                     </div>
                 </div>
             </div>
+            <!-- Overlay for better text readability -->
+            <div class="hero-overlay"></div>
         </section>
 
         <!-- Services Section Grid -->
@@ -55,62 +130,66 @@
                 </div>
 
                 <div class="grid">
-                    <!-- Card 1 -->
-                    <div class="card">
+                    <!-- Service 1 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Used Trucks Center</h3>
                             <p>Centre agréé IVECO. Une large sélection de tracteurs et utilitaires toutes marques,
                                 inspectés et garantis.</p>
-                            <a href="occasions.htm" class="card-link">Découvrir le stock &rarr;</a>
+                            <a href="occasions.htm" class="card-link"
+                                aria-label="Découvrir le stock de véhicules">Découvrir le stock &rarr;</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Card 2 -->
-                    <div class="card">
+                    <!-- Service 2 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Distributeur Max Trailer</h3>
                             <p>Partenaire officiel pour le Luxembourg. Remorques et semi-remorques de haute qualité pour
                                 tous vos besoins.</p>
-                            <a href="http://www.maxtrailer.eu/" target="_blank" class="card-link">Site officiel
+                            <a href="http://www.maxtrailer.eu/" target="_blank" rel="noopener noreferrer"
+                                class="card-link" aria-label="Visiter le site officiel de Max Trailer">Site officiel
                                 &rarr;</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Card 3 -->
-                    <div class="card">
+                    <!-- Service 3 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Contrôle Technique</h3>
                             <p>Préparation et passage au contrôle technique Luxembourgeois pour tous véhicules
                                 utilitaires et poids-lourds.</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Card 4 -->
-                    <div class="card">
+                    <!-- Service 4 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Tachygraphes</h3>
-                            <p>Installation, calibrage et entretien agréé des tachygraphes et limiteurs de vitesse.</p>
+                            <p>Installation, calibrage et entretien agréé des tachygraphes et limiteurs de vitesse
+                                légaux.</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Card 5 -->
-                    <div class="card">
+                    <!-- Service 5 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Dépannage 24/7</h3>
                             <p>Intervention rapide, remorquage et rapatriement à travers toute l'Europe. Équipements
                                 lourds disponibles.</p>
-                            <a href="depannages.htm" class="card-link">Service d'urgence &rarr;</a>
+                            <a href="depannages.htm" class="card-link"
+                                aria-label="En savoir plus sur le service de dépannage">Service d'urgence &rarr;</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Card 6 -->
-                    <div class="card">
+                    <!-- Service 6 -->
+                    <article class="card">
                         <div class="card-body">
                             <h3>Carrosserie & Peinture</h3>
                             <p>Cabine de peinture moderne et marbre de redressage. Réparations toutes marques et
                                 citernes.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -118,7 +197,7 @@
         <!-- About / Info Strip -->
         <section class="section">
             <div class="container">
-                <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                <div class="grid contact-strip" style="align-items: center;">
                     <div>
                         <h2>Un Partenaire de Confiance</h2>
                         <p>Le Groupe JOURDAN, c'est une équipe compétente dédiée à la performance de votre activité.
@@ -126,18 +205,18 @@
                             dernières technologies du transport routier.</p>
                     </div>
                     <div>
-                        <!-- Placeholder for corporate image if available, using text block for now -->
-                        <div style="background: var(--bg-section); padding: 2rem; border-radius: 8px;">
+                        <div class="info-box">
                             <h4>Horaires d'ouverture</h4>
-                            <p>Lundi - Vendredi: 08:00 - 18:00</p>
-                            <p>Samedi: 08:00 - 12:00</p>
-                            <p>Dépannage: 24h/24 7j/7</p>
+                            <div class="hours-grid">
+                                <span>Lundi - Vendredi:</span> <span>08:00 - 18:00</span>
+                                <span>Samedi:</span> <span>08:00 - 12:00</span>
+                                <span>Dépannage:</span> <span><strong>24h/24 7j/7</strong></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer id="contact">
@@ -145,7 +224,11 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Groupe JOURDAN</h4>
-                    <p>23, ZI Kehlen<br>L-8287 KEHLEN<br>Luxembourg</p>
+                    <address>
+                        23, ZI Kehlen<br>
+                        L-8287 KEHLEN<br>
+                        Luxembourg
+                    </address>
                     <br>
                     <p>TVA: LU 255.66.759</p>
                 </div>
@@ -160,19 +243,21 @@
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <ul>
-                        <li><a href="tel:+35200000000">+352 30 55 55</a></li>
-                        <li><a href="mailto:info@jourdan.lu">info@jourdan.lu</a></li>
+                    <ul class="contact-links">
+                        <li><a href="tel:+352305555" aria-label="Appeler le  352 30 55 55">📞 +352 30 55 55</a></li>
+                        <li><a href="mailto:info@jourdan.lu" aria-label="Envoyer un email à info@jourdan.lu">✉️
+                                info@jourdan.lu</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Garage Jourdan 2025 © Site créé par Mustafa Alhaj Mustafa</p>
+                <p>Garage Jourdan &copy; 2025 - Site optimisé pour tous supports. <br> Développement par Mustafa Alhaj
+                    Mustafa.</p>
             </div>
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>

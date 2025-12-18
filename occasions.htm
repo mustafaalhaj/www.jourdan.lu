@@ -1,59 +1,174 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Optimization -->
+  <title>Véhicules Poids Lourds d'Occasion | Garage Jourdan Luxembourg</title>
   <meta name="description"
     content="Catalogue de camions et véhicules utilitaires d'occasion. Tracteurs, semi-remorques et fourgons toutes marques en stock à Kehlen.">
-  <title>Véhicules Poids Lourds d'Occasion | Garage Jourdan Luxembourg</title>
+  <meta name="keywords"
+    content="Camions Occasion Luxembourg, Tracteur Iveco Occasion, Semi-remorque Occasion, Utilitaire Occasion Kehlen, Garage Jourdan Stock">
+  <meta name="author" content="Groupe Jourdan">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.jourdan.lu/occasions.htm">
+
+  <!-- Social Media / Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Véhicules d'Occasion - Garage Jourdan">
+  <meta property="og:url" content="https://www.jourdan.lu/occasions.htm">
+  <meta property="og:image" content="https://www.jourdan.lu/index_htm_files/hero_trucks.jpg">
+  <meta property="og:description"
+    content="Découvrez notre sélection de véhicules industriels inspectés et prêts à travailler.">
+
+  <!-- Performance & PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FF8200">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="index_htm_files/favicon.png">
+
+  <style>
+    /* Specific Override for Max Width PDF Rendering */
+    .pdf-container {
+      width: 100%;
+      height: calc(100vh - 100px);
+      /* Fill screen minus header estimate */
+      min-height: 800px;
+      background: #525659;
+      /* Standard PDF viewer bg color */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .pdf-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .fullscreen-btn {
+      display: inline-flex;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .pdf-container {
+        height: 80vh;
+        min-height: 500px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
   <header>
-    <div class="container header-content">
-      <a href="index.html" class="logo">JOURDAN <span>LUXEMBOURG</span></a>
-      <nav>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+        Groupe <span>JOURDAN</span>
+      </a>
+
+      <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="main-nav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="occasions.htm" class="active">Occasions</a></li>
-          <li><a href="depannages.htm">Dépannage</a></li>
+          <li><a href="occasions.htm" class="active" aria-current="page">Véhicules d'Occasion</a></li>
+          <li><a href="depannages.htm">Dépannage & Services</a></li>
           <li><a href="matdepannage.htm">Matériel</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav-btn"><a href="#contact" class="btn btn-primary" style="color: white;">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero" style="padding: 2rem 0;">
-      <div class="hero-text">
-        <h1>Nos Occasions</h1>
-        <p>Consultez notre catalogue de véhicules disponibles.</p>
+  <main id="main-content">
+    <section class="section bg-light" style="padding-top: 2rem;">
+      <div class="container" style="max-width: 1600px;"> <!-- Wider container for PDF -->
+        <div class="text-center" style="margin-bottom: 2rem;">
+          <h1>Nos Véhicules d'Occasion</h1>
+          <p>Liste mise à jour régulièrement. Inspectés et garantis.</p>
+
+          <!-- Fallback / Direct Link for Mobile -->
+          <a href="http://www.jourdan.lu/occasions/occasions.pdf" target="_blank"
+            class="btn btn-primary fullscreen-btn">
+            <span style="margin-right: 8px;">📥</span> Télécharger / Ouvrir en Plein Écran
+          </a>
+        </div>
+
+        <div class="pdf-container">
+          <iframe src="http://www.jourdan.lu/occasions/occasions.pdf" class="pdf-frame" title="Catalogue PDF Occasions">
+            <p>Votre navigateur ne supporte pas l'affichage PDF. <a
+                href="http://www.jourdan.lu/occasions/occasions.pdf">Cliquez ici pour télécharger le fichier.</a></p>
+          </iframe>
+        </div>
       </div>
     </section>
 
-    <div class="iframe-wrapper">
-      <iframe src="http://www.jourdan.lu/occasions/occasions.pdf"></iframe>
-    </div>
+    <!-- Call to Action -->
+    <section class="section">
+      <div class="container text-center">
+        <h2>Vous ne trouvez pas ce que vous cherchez ?</h2>
+        <p>Notre stock change rapidement. Contactez-nous pour une recherche personnalisée.</p>
+        <a href="#contact" class="btn btn-outline">Nous Contacter</a>
+      </div>
+    </section>
   </main>
 
   <footer id="contact">
     <div class="container">
-      <div class="footer-content">
-        <div class="logo" style="display:inline-block; margin-bottom: 1rem;">JOURDAN <span>S.A.</span></div>
-        <p><strong>Adresse:</strong> 23, ZI Kehlen, L-8287 KEHLEN</p>
-        <p><strong>TVA:</strong> LU 255.66.759</p>
-        <br>
-        <p>Garage Jourdan 2025 © Site créé par Mustafa Alhaj Mustafa</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Groupe JOURDAN</h4>
+          <address>
+            23, ZI Kehlen<br>
+            L-8287 KEHLEN<br>
+            Luxembourg
+          </address>
+          <br>
+          <p>TVA: LU 255.66.759</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="occasions.htm">Véhicules d'Occasion</a></li>
+            <li><a href="depannages.htm">Dépannage</a></li>
+            <li><a href="matdepannage.htm">Matériel</a></li>
+            <li><a href="#">Carrosserie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-links">
+            <li><a href="tel:+352305555" aria-label="Appeler le  352 30 55 55">📞 +352 30 55 55</a></li>
+            <li><a href="mailto:info@jourdan.lu" aria-label="Envoyer un email à info@jourdan.lu">✉️ info@jourdan.lu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Garage Jourdan &copy; 2025 - Site optimisé pour tous supports. <br> Développement par Mustafa Alhaj Mustafa.
+        </p>
       </div>
     </div>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/main.js" defer></script>
 </body>
 
 </html>
