@@ -5,77 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Catalogue de camions et véhicules utilitaires d'occasion IVECO et toutes marques. Tracteurs, semi-remorques et fourgons disponibles immédiatement au Luxembourg.">
-  <meta name="keywords"
-    content="Camion occasion, IVECO occasion, Poids lourds occasion, Luxembourg, Tracteur routier, Véhicule utilitaire, Max Trailer occasion">
-  <meta name="author" content="Garage Jourdan">
-  <meta name="robots" content="index, follow">
-
+    content="Catalogue de camions et véhicules utilitaires d'occasion. Tracteurs, semi-remorques et fourgons toutes marques en stock à Kehlen.">
   <title>Véhicules Poids Lourds d'Occasion | Garage Jourdan Luxembourg</title>
-
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap">
-
   <link rel="stylesheet" href="styles/main.css">
-  <script src="scripts/main.js" defer></script>
+  <link rel="icon" type="image/png" href="index_htm_files/favicon.png">
 </head>
 
 <body>
+
   <header>
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Retour à l'accueil">
-        Groupe <span>JOURDAN</span>
-      </a>
+    <div class="container header-content">
+      <a href="index.html" class="logo">JOURDAN <span>LUXEMBOURG</span></a>
       <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="occasions.htm" class="active" aria-current="page">Véhicules d'Occasion</a></li>
-          <li><a href="depannages.htm">Dépannage & Services</a></li>
+          <li><a href="occasions.htm" class="active">Occasions</a></li>
+          <li><a href="depannages.htm">Dépannage</a></li>
           <li><a href="matdepannage.htm">Matériel</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@jourdan.lu" class="btn btn-primary">Contact</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero" role="banner"
-      style="background-image: url('index_htm_files/hero_trucks.jpg'); padding: 4rem 0;">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Nos <span class="text-gradient">OCCASIONS</span></h1>
-          <p class="reveal delay-100">Consultez notre catalogue de véhicules disponibles.</p>
-        </div>
+  <main class="container">
+    <section class="hero" style="padding: 2rem 0;">
+      <div class="hero-text">
+        <h1>Nos Occasions</h1>
+        <p>Consultez notre catalogue de véhicules disponibles.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container iframe-wrapper" style="height: 100vh;">
-        <iframe src="http://www.jourdan.lu/occasions/occasions.pdf" title="Catalogue des occasions" width="100%"
-          height="100%" style="border:none;"></iframe>
-      </div>
-    </section>
+    <div class="iframe-wrapper">
+      <iframe src="http://www.jourdan.lu/occasions/occasions.pdf"></iframe>
+    </div>
   </main>
 
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-col">
-        <h3>Groupe JOURDAN</h3>
-        <p>Zone Industrielle<br>L-4444 Sanem<br>Luxembourg</p>
-      </div>
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p>Tél: +352 55 55 55<br>Email: info@jourdan.lu</p>
-      </div>
-      <div class="footer-col" style="text-align: right;">
-        <p>&copy; 2025 Garage Jourdan | Site créé par Mustafa Alhaj Mustafa</p>
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo" style="display:inline-block; margin-bottom: 1rem;">JOURDAN <span>S.A.</span></div>
+        <p><strong>Adresse:</strong> 23, ZI Kehlen, L-8287 KEHLEN</p>
+        <p><strong>TVA:</strong> LU 255.66.759</p>
+        <br>
+        <p>Garage Jourdan 2025 © Site créé par Mustafa Alhaj Mustafa</p>
       </div>
     </div>
   </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
