@@ -7,26 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Optimization -->
-    <title>Garage Jourdan Luxembourg | Concessionnaire IVECO & Dépannage Poids Lourds</title>
+    <title>Garage Jourdan Luxembourg | IVECO & FORD Official Dealer</title>
     <meta name="description"
-        content="Expert Poids Lourds au Luxembourg depuis 2012. Concessionnaire officiel IVECO, distributeur Max Trailer, dépannage 24/7 et service après-vente agréé.">
+        content="Garage Jourdan Luxembourg: Concessionnaire Officiel IVECO & FORD. Vente, Entretien, Réparation et Dépannage 24/7 Poids Lourds et Utilitaires. Spécialiste Camions à Kehlen.">
     <meta name="keywords"
-        content="Garage Jourdan, Iveco Luxembourg, Dépannage Poids Lourds, Camions Occasion, Max Trailer, Kehlen, Maintenance Camion, Tachygraphe">
-    <meta name="author" content="Groupe Jourdan">
+        content="Garage Luxembourg, Poids Lourds, Camion, IVECO, FORD, Réparation Camion, Dépannage 24/7, Garage Kehlen, Mechanicien Poids Lourds, Vente Utilitaire, Ford Transit, Iveco S-Way, Maintenance Flotte, Camionnettes, Garage Toutes Marques, Réparation Multimarques">
+    <meta name="author" content="Garage Jourdan">
+    <meta name="geo.region" content="LU" />
+    <meta name="geo.placename" content="Kehlen" />
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.jourdan.lu/">
 
+    <!-- hreflang Tags for Multi-Language SEO -->
+    <link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/" />
+    <link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/" />
+    <link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/" />
+    <link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/" />
+    <link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/" />
+
     <!-- Social Media / Open Graph -->
     <meta property="og:type" content="business.business">
-    <meta property="og:title" content="Garage Jourdan - Expert Poids Lourds Luxembourg">
+    <meta property="og:title" content="Garage Jourdan | IVECO & FORD Luxembourg - Leader Européen">
     <meta property="og:url" content="https://www.jourdan.lu/">
     <meta property="og:image" content="https://www.jourdan.lu/index_htm_files/hero_trucks.jpg">
     <meta property="og:description"
-        content="Votre partenaire de confiance pour l'achat, l'entretien et le dépannage de véhicules industriels et utilitaires au Luxembourg.">
+        content="Garage Jourdan: Vente et Service IVECO & FORD. Le spécialiste Poids Lourds et Utilitaires au Luxembourg.">
     <meta property="og:site_name" content="Garage Jourdan">
 
     <!-- Performance & PWA -->
     <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="index_htm_files/favicon.png">
     <meta name="theme-color" content="#FF8200">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +66,11 @@
         "latitude": 49.6667,
         "longitude": 6.0333
       },
+      "brand": [
+        { "@type": "Brand", "name": "IVECO" },
+        { "@type": "Brand", "name": "FORD" },
+        { "@type": "Brand", "name": "Max Trailer" }
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -83,6 +99,15 @@
                 Groupe <span>JOURDAN</span>
             </a>
 
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <a href="index.html" class="lang-btn active" title="Français">🇫🇷</a>
+                <a href="en/index.html" class="lang-btn" title="English">🇬🇧</a>
+                <a href="pt/index.html" class="lang-btn" title="Português">🇵🇹</a>
+                <a href="lb/index.html" class="lang-btn" title="Lëtzebuergesch">🇱🇺</a>
+                <a href="ro/index.html" class="lang-btn" title="Română">🇷🇴</a>
+            </div>
+
             <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -91,28 +116,49 @@
 
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
-                    <li><a href="occasions.htm">Véhicules d'Occasion</a></li>
+                    <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="vente.html" data-i18n="nav.sales">Vente</a></li>
+                    <li><a href="apropos.html" data-i18n="nav.about">L'Entreprise</a></li>
+                    <li><a href="occasions.htm" data-i18n="nav.stock">Véhicules d'Occasion</a></li>
                     <li><a href="depannages.htm">Dépannage & Services</a></li>
                     <li><a href="matdepannage.htm">Matériel</a></li>
-                    <li class="nav-btn"><a href="#contact" class="btn btn-primary" style="color: white;">Contact</a>
-                    </li>
+                    <li><a href="tarifs.html" style="color: var(--primary-orange); font-weight: bold;"
+                            data-i18n="nav.pricing">Tarifs</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="tel:+352305555" class="btn-emergency-nav" data-i18n="nav.emergency">🚨 Dépannage
+                            24/7</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
+        <!-- Promo Banner (Psychological Pricing) -->
+        <div id="promo-banner" class="promo-banner">
+            <div class="container promo-content">
+                <span class="promo-badge" data-i18n="home.promo_title">OFFRE LIMITÉE</span>
+                <p>
+                    <span data-i18n="home.promo_text">Heure Atelier :</span>
+                    <span class="old-price">125€</span>
+                    <span class="new-price">100€ HT</span>
+                </p>
+                <a href="tarifs.html" class="btn-promo" data-i18n="home.promo_btn">Voir l'Offre</a>
+                <button class="close-promo" aria-label="Fermer l'offre">×</button>
+            </div>
+        </div>
+
         <!-- Hero Section -->
         <section class="hero" aria-label="Introduction">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Expertise et Innovation Poids Lourds au Luxembourg</h1>
-                    <p>Concessionnaire officiel IVECO et Max Trailer. Une gamme complète de services pour les
+                    <h1 data-i18n="home.hero_title">Expertise et Innovation Poids Lourds au Luxembourg</h1>
+                    <p data-i18n="home.hero_subtitle">Concessionnaire officiel IVECO et Max Trailer. Une gamme complète
+                        de services pour les
                         professionnels du transport depuis 2012.</p>
                     <div class="hero-buttons">
-                        <a href="occasions.htm" class="btn btn-primary">Voir les Occasions</a>
-                        <a href="#services" class="btn btn-outline" style="color: #fff; border-color: #fff;">Nos
+                        <a href="occasions.htm" class="btn btn-primary" data-i18n="home.hero_cta">Voir les Occasions</a>
+                        <a href="#services" class="btn btn-outline" style="color: #fff; border-color: #fff;"
+                            data-i18n="home.hero_contact">Nos
                             Services</a>
                     </div>
                 </div>
@@ -194,6 +240,87 @@
             </div>
         </section>
 
+        <!-- Sales Department Section (IVECO & FORD) -->
+        <section id="sales" class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <h2>Département Vente & Commercial</h2>
+                    <p>Leader européen dans la vente de véhicules <strong>IVECO</strong> et <strong>FORD</strong>. Une
+                        équipe dédiée pour vous guider vers le meilleur choix.</p>
+                </div>
+
+                <div class="grid sales-grid">
+                    <!-- Sales Agent 1: IVECO -->
+                    <article class="card sales-card">
+                        <div class="card-body">
+                            <div class="agent-header">
+                                <div class="agent-avatar">I</div>
+                                <div>
+                                    <h3>Expert Commercial IVECO</h3>
+                                    <p class="role-badge">Poids Lourds & Utilitaires</p>
+                                </div>
+                            </div>
+                            <div class="agent-info">
+                                <p class="seo-desc">Spécialiste de la gamme IVECO S-Way, Daily et Eurocargo.
+                                    Configuration sur mesure et meilleures offres de financement au Luxembourg.</p>
+                                <ul class="contact-list">
+                                    <li>
+                                        <span class="icon">📱</span>
+                                        <a href="tel:+352305555" aria-label="Appeler le service commercial">+352 30 55
+                                            55</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon">✉️</span>
+                                        <a href="mailto:vente@jourdan.lu"
+                                            aria-label="Email commercial">vente@jourdan.lu</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon">🕒</span>
+                                        <span>Lun - Ven: 08:00 - 18:00</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+352305555" class="btn btn-primary full-width">Appeler le Conseiller</a>
+                        </div>
+                    </article>
+
+                    <!-- Sales Agent 2: FORD -->
+                    <article class="card sales-card">
+                        <div class="card-body">
+                            <div class="agent-header">
+                                <div class="agent-avatar" style="background: #003478; color: white;">F</div>
+                                <div>
+                                    <h3>Expert Commercial FORD</h3>
+                                    <p class="role-badge">Ford Pro & Flottes</p>
+                                </div>
+                            </div>
+                            <div class="agent-info">
+                                <p class="seo-desc">Expertise complète sur la gamme Ford Transit et Ranger. Solutions de
+                                    mobilité pour entreprises et indépendants.</p>
+                                <ul class="contact-list">
+                                    <li>
+                                        <span class="icon">📱</span>
+                                        <a href="tel:+352305555" aria-label="Appeler le service commercial">+352 30 55
+                                            55</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon">✉️</span>
+                                        <a href="mailto:vente@jourdan.lu"
+                                            aria-label="Email commercial">vente@jourdan.lu</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon">🕒</span>
+                                        <span>Lun - Ven: 08:00 - 18:00</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+352305555" class="btn btn-primary full-width">Appeler le Conseiller</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- About / Info Strip -->
         <section class="section">
             <div class="container">
@@ -218,6 +345,15 @@
             </div>
         </section>
     </main>
+
+    <!-- Interactive Map -->
+    <section id="map" class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.42!2d6.0333!3d49.6667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954e6616087771%3A0x867207621453b3e2!2sZone%20Industrielle%20Kehlen!5e0!3m2!1sfr!2slu!4v1614245678901!5m2!1sfr!2slu"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Localisation Garage Jourdan">
+        </iframe>
+    </section>
 
     <footer id="contact">
         <div class="container">
@@ -251,12 +387,23 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Garage Jourdan &copy; 2025 - Site optimisé pour tous supports. <br> Développement par Mustafa Alhaj
-                    Mustafa.</p>
+                <p data-i18n="footer.rights">Garage Jourdan &copy; 2026 - Site optimisé pour tous supports.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;"><a href="mentions-legales.html"
+                        style="color: #9ca3af; text-decoration: underline;">Mentions Légales & RGPD</a></p>
+                <p data-i18n="footer.address" style="margin-top: 0.5rem; color: #6b7280; font-size: 0.8rem;">23, Zone
+                    Industrielle, L-8287 Kehlen</p>
+                <p class="dev-credit">Développé par <span>Mustafa Alhaj Mustafa</span></p>
             </div>
         </div>
     </footer>
 
+    <!-- Emergency Floating Button -->
+    <a href="tel:+352305555" class="floating-sos" aria-label="Appel d'urgence 24h/24">
+        <span class="sos-icon">🆘</span>
+        <span class="sos-text">Dépannage 24/7</span>
+    </a>
+
+    <script src="scripts/translations.js"></script>
     <script src="scripts/main.js" defer></script>
 </body>
 

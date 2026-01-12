@@ -2,6 +2,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
+    // 0. Promo Banner Logic
+    const promoBanner = document.getElementById('promo-banner');
+    const closePromo = document.querySelector('.close-promo');
+
+    if (closePromo && promoBanner) {
+        closePromo.addEventListener('click', () => {
+            promoBanner.style.display = 'none';
+        });
+    }
+
     // 1. Mobile Menu Toggle
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.getElementById('main-nav');
@@ -38,37 +48,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Intersection Observer for Animations (Performance Optimized)
-    const cards = document.querySelectorAll('.card');
+    // 2. Scroll Reveal Animations (Staggered & Performance Optimized)
+    const revealElements = document.querySelectorAll('.card, h2, .info-box, .hero-content');
 
-    if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target); // Stop observing once animated
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '50px' // Start slightly before
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
         });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        cards.forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            // Use CSS transition defined in stylesheet, but we can delay here if needed
-            // card.style.transitionDelay = `${index * 0.1}s`; 
-            observer.observe(card);
-        });
-    } else {
-        // Fallback for older browsers
-        cards.forEach(card => {
-            card.style.opacity = '1';
-            card.style.transform = 'none';
-        });
-    }
+    revealElements.forEach((el, index) => {
+        el.classList.add('reveal');
+        // Optional: Stagger transition delay for grid items
+        // if (el.classList.contains('card')) { el.style.transitionDelay = '0.1s'; }
+        revealObserver.observe(el);
+    });
 
     // 3. Header Scroll Effect (Performance Optimized)
     const header = document.querySelector('header');
@@ -93,4 +90,17 @@ document.addEventListener('DOMContentLoaded', () => {
             ticking = true;
         }
     }, { passive: true });
+
+    // 4. PWA Service Worker Registration
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration => {
+                    console.log('SW registered: ', registration);
+                })
+                .catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+        });
+    }
 });
