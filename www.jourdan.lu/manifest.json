@@ -1,0 +1,21 @@
+{
+  "name": "Garage Jourdan Luxembourg",
+  "short_name": "Jourdan",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF8200",
+  "description": "Concessionnaire officiel IVECO et Dépannage Poids Lourds au Luxembourg.",
+  "icons": [
+    {
+      "src": "index_htm_files/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "index_htm_files/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
