@@ -180,66 +180,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.jourdan.lu/tarifs.html</loc>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/tarifs.html" />
-        <lastmod>2026-01-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.jourdan.lu/en/tarifs.html</loc>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/tarifs.html" />
-        <lastmod>2026-01-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.jourdan.lu/lb/tarifs.html</loc>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/tarifs.html" />
-        <lastmod>2026-01-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.jourdan.lu/pt/tarifs.html</loc>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/tarifs.html" />
-        <lastmod>2026-01-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.jourdan.lu/ro/tarifs.html</loc>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.jourdan.lu/en/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="lb" href="https://www.jourdan.lu/lb/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="pt" href="https://www.jourdan.lu/pt/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="ro" href="https://www.jourdan.lu/ro/tarifs.html" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jourdan.lu/tarifs.html" />
-        <lastmod>2026-01-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://www.jourdan.lu/contact.html</loc>
         <xhtml:link rel="alternate" hreflang="fr" href="https://www.jourdan.lu/contact.html" />

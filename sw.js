@@ -10,7 +10,7 @@ const ASSETS_TO_CACHE = [
     '/index_htm_files/header_logo.jpg',
     '/mentions-legales.html',
     '/404.html',
-    '/tarifs.html',
+
     '/contact.html'
 ];
 

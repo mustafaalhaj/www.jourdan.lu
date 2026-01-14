@@ -9,19 +9,19 @@ const translations = {
             home: "Accueil",
             sales: "Vente",
             about: "L'Entreprise",
-            pricing: "Tarifs",
+
             stock: "Occasions",
             contact: "Contact",
             emergency: "🚨 Dépannage 24/7"
         },
         home: {
             hero_title: "Expert Poids Lourds & Utilitaires",
-            hero_subtitle: "Service agrée IVECO & FORD à Luxembourg depuis 1989.",
+            hero_subtitle: "Service IVECO indépendant & FORD à Luxembourg depuis 1989.",
             hero_cta: "Nos Services",
             hero_contact: "Contactez-nous",
             promo_title: "PROMO HIVER",
             promo_text: "Forfait Check-up complet à partir de -20%",
-            promo_btn: "Voir Tarifs"
+
         },
         footer: {
             rights: "Garage Jourdan &copy; 2026",
@@ -127,19 +127,19 @@ const translations = {
             home: "Home",
             sales: "Sales",
             about: "Company",
-            pricing: "Pricing",
+
             stock: "Stock",
             contact: "Contact",
             emergency: "🚨 24/7 Assist"
         },
         home: {
             hero_title: "Heavy Truck & Van Experts",
-            hero_subtitle: "Approved IVECO & FORD Service in Luxembourg since 1989.",
+            hero_subtitle: "Independent IVECO & FORD Service in Luxembourg since 1989.",
             hero_cta: "Our Services",
             hero_contact: "Contact Us",
             promo_title: "WINTER SALE",
             promo_text: "Complete Check-up Package -20% OFF",
-            promo_btn: "View Rates"
+
         },
         footer: {
             rights: "Garage Jourdan &copy; 2026",
@@ -245,19 +245,19 @@ const translations = {
             home: "Início",
             sales: "Vendas",
             about: "Empresa",
-            pricing: "Preços",
+
             stock: "Ocasiões",
             contact: "Contacto",
             emergency: "🚨 Reboque 24/7"
         },
         home: {
             hero_title: "Especialista em Pesados e Utilitários",
-            hero_subtitle: "Serviço autorizado IVECO & FORD no Luxemburgo desde 1989.",
+            hero_subtitle: "Serviço IVECO independente & FORD no Luxemburgo desde 1989.",
             hero_cta: "Nossos Serviços",
             hero_contact: "Contacte-nos",
             promo_title: "PROMO INVERNO",
             promo_text: "Check-up completo com -20% de desconto",
-            promo_btn: "Ver Preços"
+
         },
         footer: {
             rights: "Garage Jourdan &copy; 2026",
@@ -363,19 +363,19 @@ const translations = {
             home: "Heem",
             sales: "Verkaf",
             about: "Entreprise",
-            pricing: "Präisser",
+
             stock: "Occasiounen",
             contact: "Kontakt",
             emergency: "🚨 Depannage 24/7"
         },
         home: {
             hero_title: "Expert fir Camionen & Camionnetten",
-            hero_subtitle: "Autoriséierten IVECO & FORD Service zu Lëtzebuerg zënter 1989.",
+            hero_subtitle: "Onofhängegen IVECO Service & FORD zu Lëtzebuerg zënter 1989.",
             hero_cta: "Eis Servicer",
             hero_contact: "Kontaktéiert eis",
             promo_title: "WINTER AKTIOUN",
             promo_text: "Komplette Check-up Package -20%",
-            promo_btn: "Präisser gesinn"
+
         },
         footer: {
             rights: "Garage Jourdan &copy; 2026",
@@ -481,19 +481,19 @@ const translations = {
             home: "Acasă",
             sales: "Vânzări",
             about: "Companie",
-            pricing: "Prețuri",
+
             stock: "Ocazii",
             contact: "Contact",
             emergency: "🚨 Asistență 24/7"
         },
         home: {
             hero_title: "Expert în Camioane și Utilitare",
-            hero_subtitle: "Service autorizat IVECO & FORD în Luxemburg din 1989.",
+            hero_subtitle: "Service IVECO independent & FORD în Luxemburg din 1989.",
             hero_cta: "Serviciile Noastre",
             hero_contact: "Contactați-ne",
             promo_title: "OFERTĂ IARNĂ",
             promo_text: "Pachet Check-up complet -20%",
-            promo_btn: "Vezi Prețuri"
+
         },
         footer: {
             rights: "Garage Jourdan &copy; 2026",
